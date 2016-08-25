@@ -23,6 +23,3 @@ class Calctotales
     puts "El total con impuesto es: " + subtotalWithTaxes.to_s
   end
 end
-
-program = Calctotales.new(ARGV[0], ARGV[1], ARGV[2])
-program.showTotal()
