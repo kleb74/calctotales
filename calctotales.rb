@@ -5,7 +5,8 @@ class Calctotales
   end
 
   def showTotal
-    puts "El total es: " + (@cant * @price).to_s
+    puts "El total sin impuesto es: " + (@cant * @price).to_s
+    puts "El total con impuesto es: " + (@cant * @price * 1.03).to_s
   end
 end
 
