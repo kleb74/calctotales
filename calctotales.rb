@@ -1,7 +1,7 @@
 class Calctotales
   def initialize(cant, price)
-      @cant = cant
-      @price = price
+      @cant = cant.to_i
+      @price = price.to_i
   end
 
   def showTotal
@@ -9,5 +9,5 @@ class Calctotales
   end
 end
 
-program = Calctotales.new(2, 10)
+program = Calctotales.new(ARGV[0], ARGV[1])
 program.showTotal()
